@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <header>
+    <h1 id="game-title">Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <section id="scoreboard">
+      <div class="score-box" id="score-you">
+        <span class="score-label">You</span>
+        <span class="score-value" id="you-score">0</span>
+      </div>
+      <div class="score-box" id="score-computer">
+        <span class="score-label">Computer</span>
+        <span class="score-value" id="computer-score">0</span>
+      </div>
+    </section>
+
+    <section id="round-info">
+      <span id="round-number">Round 1/5</span>
+    </section>
+
+    <section id="choices">
+      <button class="choice-btn" id="rock-btn" aria-label="Rock">✊ Rock</button>
+      <button class="choice-btn" id="paper-btn" aria-label="Paper">✋ Paper</button>
+      <button class="choice-btn" id="scissors-btn" aria-label="Scissors">✌️ Scissors</button>
+    </section>
+
+    <section id="selections">
+      <div class="selection" id="player-choice">
+        <span class="selection-label">You:</span>
+        <span class="selection-value" id="player-choice-value">—</span>
+      </div>
+      <div class="selection" id="computer-choice">
+        <span class="selection-label">Computer:</span>
+        <span class="selection-value" id="computer-choice-value">—</span>
+      </div>
+    </section>
+
+    <section id="message-area">
+      <p id="round-result-message"></p>
+      <p id="final-result-message"></p>
+    </section>
+
+    <button id="reset-game-btn">Reset Game</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
